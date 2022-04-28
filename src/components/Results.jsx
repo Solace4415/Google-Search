@@ -39,7 +39,7 @@ const Results = () => {
       );
     case "/image":
       return (
-        <div className="flex flex-wrap justify-center items-center">
+        <div className="flex flex-wrap justify-between">
           {results?.image_results?.map(({ image, link: { href, title } }, index) => (
             <div key={index}>
               <a
@@ -57,7 +57,7 @@ const Results = () => {
       );
     case "/video":
       return (
-        <div className="flex flex-wrap">
+        <div className="flex flex-wrap justify-center items-center">
           {results?.results?.map((video, index) => (
             <div key={index} className="p-2">
               {video?.additional_links?.[0]?.href.includes("watch") && (
