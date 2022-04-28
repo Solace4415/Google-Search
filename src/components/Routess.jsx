@@ -2,7 +2,7 @@ import React from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
 import Results from "./Results";
 
-const array = ["/search", "/image", "/news", "/video"];
+const array = ["/search", "/image", "/video"];
 
 const Routess = () => {
   return (

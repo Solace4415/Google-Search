@@ -22,14 +22,26 @@ export const ResultContextProvider = ({ children }) => {
 
     const data = await response.json();
 
+    console.log(data)
 
-    if (type.includes("/news")) {
-      setResults(data.entries);
-    } else if (type.includes("/image")) {
-      setResults(data.image_results);
-    } else {
-        setResults(data.results);
-    }
+    // if (type.includes("/news")) {
+    //   setResults(data.entries);
+    // } else if (type?.includes("/image")) {
+    //   setResults(data.image_results);
+    // } else if (type?.includes("/search")) {
+    //   setResults(data.results);
+    // } else {
+    //   setResults(data.results);
+    // }
+
+    // console.log({ data });
+    // if (type?.includes("/images")) {
+    //   setResults(data?.image_results)
+    // } else {
+    //   setResults(data)
+    // }
+
+    setResults(data)
 
     setIsLoading(false);
   };

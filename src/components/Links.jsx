@@ -4,7 +4,6 @@ import "./Links.css"
 
 const links = [
   { url: "/search", text: "🔎 All" },
-  { url: "/news", text: "📰 News" },
   { url: "/image", text: "📸 Images" },
   { url: "/video", text: "📺 Videos" },
 ];
